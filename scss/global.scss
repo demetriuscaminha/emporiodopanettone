@@ -1,0 +1,247 @@
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: $font-default;
+    font-weight: 300;
+    color: $primary;
+    a{
+        text-decoration: none;
+        color: $primary;
+        &:hover{
+            color: $tertiary;
+            text-decoration: none;
+        }
+    }
+}
+.header{
+    background: $header;
+    .header-logo{
+        .local-title{
+            font-weight: bold;
+        }
+    }
+    .menu-bar{
+        @extend %gradient-menu;
+        li.nav-item{
+            padding: 0 70px;
+            a.nav-link{
+                color: white;
+                &:hover{
+                    color: $tertiary;
+                }
+            }
+        }
+    }
+}
+.produtos{
+    padding: 100px 0;
+    h2.block-title{
+        @extend %block-title;
+    }
+    .subtitle {
+        font-size: 18px;
+        width: 720px;
+    }
+    .owl-carousel{
+        position: relative;
+        .owl-item{
+            .item{
+                img{
+                    width: 220px;
+                }
+                .prod-desc{
+                    font-weight: bold;
+                }
+            }
+        }
+        .owl-nav{
+            .owl-prev, .owl-next{
+                font-size:56px;
+                position: absolute;
+                margin: 0;
+                top: 90px;
+                cursor: pointer;
+                color: $primary;
+                opacity: 1;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background: rgba(90,60,50,.15);
+                &:hover {
+                    background: rgba(90,60,50,.35);
+                    outline: none;
+                }
+                &:focus{
+                    outline: none;
+                }
+                span{
+                    position: absolute;
+                    top: -19px;
+                    right: 15px;
+                }
+            }
+            .owl-prev{
+                left: -10px;
+                span{
+                    right: 18px;
+                }
+            }
+            .owl-next{
+                right: -10px;
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+    }
+}
+
+.cupom-form{
+    background: $primary;
+    color: white;
+    padding: 100px 0;
+    h2.block-title{
+        @extend %block-title;
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .left-side{
+        .steps{
+            .step{
+                .icon{
+                    i{
+                        width: 50px;
+                        height: 50px;
+                        background: $color-menu1;
+                        border-radius: 100%;
+                    }
+                }
+                .step-desc{
+                    .step-title{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .right-side{
+        .form-title{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cupomForm{
+            .form-control{
+                border-radius: 50px;
+                padding: .4rem 1.4rem;
+                color: $primary;
+            }
+            .actions {
+                .btn {
+                    background: $tertiary;
+                    border-radius: 50px;
+                    padding: .4rem 2rem;
+                    color: white;
+                    &:hover{
+                        background: $dark-tertiary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zap-button{
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    bottom: 100px;
+    right: 60px;
+    left: inherit;
+    z-index: 999;
+    a{
+        background: $zap-color;
+        border-radius: 50px;
+        padding: .4rem 1.8rem;
+        border: 0;
+        &:hover, &:active{
+            background: $zap-color-h !important;
+            border: 0;
+            outline: none;
+            box-shadow: none !important;
+        }
+    }
+
+}
+.about-us{
+    background: url("../images/bg-produtos.png") repeat center center;
+    padding: 100px 0;
+    .left-side{
+        h2.block-title{
+            @extend %block-title;
+        }
+        .subtitle{
+            @extend %block-title;
+            font-size: 26px;
+            color: $secondary;
+        }
+        .about-description{
+            font-size: 16px;
+        }
+    }
+    .right-side{
+        img{
+            transform: rotate(4deg);
+        }
+    }
+}
+.stores{
+    h2.block-title{
+        @extend %block-title;
+        color: $secondary;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .adress-store{
+        .location{
+            font-weight: bold;
+        }
+        .tel{
+            font-size: 24px;
+        }
+    }
+}
+.village{
+    .village-image{
+        background: transparent url("../images/ville.png") no-repeat center center;
+        background-size: cover;
+        height: 260px;
+    }
+}
+footer{
+    background: transparent url("../images/footer.png") no-repeat center center;
+    background-size: cover;
+    padding: 80px 0 120px;
+    .phone{
+        .icon{
+            font-size: 36px;
+            color: $header;
+        }
+        .phone{
+            font-size: 24px;
+        }
+    }
+    .socialcontact {
+
+    }
+    .stores{
+        .icon{
+            font-size: 36px;
+            color: $header;
+        }
+    }
+}

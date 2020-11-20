@@ -1,0 +1,21 @@
+.btn, .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.form-control {
+    &:focus{
+        border-color: $primary;
+        box-shadow: none !important;
+    }
+}
+%gradient-menu{
+    background: $color-menu1; /* Old browsers */
+    background: -moz-linear-gradient(top,  $color-menu1 0%, $color-menu2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $color-menu1 0%,$color-menu2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $color-menu1 0%,$color-menu2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-menu1', endColorstr='$color-menu2',GradientType=0 ); /* IE6-9 */
+}
+%block-title{
+    font-family: $font-secondary;
+    font-size: 56px;
+}
